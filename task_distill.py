@@ -638,7 +638,7 @@ def get_tensor_data(args,task,tokenizer,evaluate=False,aug=True):
     else:
         logger.info("Creating features from dataset file at data")
         label_list = processor.get_labels()
-        if args.aug_train:
+        if aug:
             examples=processor.get_aug_examples(args.data_dir)
         else:
             if evaluate:
