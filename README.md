@@ -156,9 +156,6 @@ python task_distill.py --do_eval \
                        --max_seq_length 128  
                                    
 ```
-
-To Dos
-=========================
-* Evaluate TinyBERT on Chinese tasks.
-* Tiny*: use NEZHA or ALBERT as the teacher in TinyBERT learning.
-* Release better general TinyBERTs.
+Revised
+==================================
+根据`transformers`修改了数据预处理流程，增加了保存特征的代码，使得程序运行更加顺畅
